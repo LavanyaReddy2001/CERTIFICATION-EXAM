@@ -1,6 +1,6 @@
 $(document).ready(function () {
     if (localStorage.getItem("status") == "true") {
-        location.assign("./ordersPage.html");
+        location.assign("./orderPage.html");
     }
     let lform = window.document.getElementById("l_form");
     lform.onsubmit = function (e) {
@@ -16,7 +16,7 @@ $(document).ready(function () {
                 function () {
                     alert("Login Successful!");
                     window.localStorage.setItem("status", true);
-                    location.replace("./ordersPage.html");
+                    location.replace("./orderPage.html");
                 }
             );
         } else {
